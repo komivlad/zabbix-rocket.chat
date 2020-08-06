@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Rocket.Chat incoming web-hook URL and user name
-url="https://rocket.biglion.app/hooks/$1"
+url="https://rocket.chat/hooks/$1"
 username='zabbix'
 icon_emoji=':grinning:'
 
