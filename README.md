@@ -1,6 +1,9 @@
 # zabbix-rocket.chat
-Rocket.Chat zabbix alerts script
+Rocket.Chat zabbix alerts script.
+
 Usage:
+
+* Change url, zabbix_baseurl in script.
 * Create incoming webhook for alerts.
 * Copy script to the alertscript path.
 * Create new mediatype Rocket.Chat with params:
@@ -24,5 +27,6 @@ Default message:
 >  EVENT_ID: {EVENT.ID}
 >  TRIGGER_URL: {TRIGGER.URL}
 >  TRIGGER_DESCRIPTION: {TRIGGER.DESCRIPTION}
+
 * Set operations 
 > Send message to users: Admin (Zabbix Administrator) via Rocket.Chat
