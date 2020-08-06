@@ -1,5 +1,6 @@
 # zabbix-rocket.chat
 Rocket.Chat zabbix alerts script
+
 Usage:
 * Create an incoming webhook for alerts.
 * Copy the script to the alertscript path.
