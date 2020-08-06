@@ -47,7 +47,7 @@ elif  [[ "$subject" == *"PROBLEM"* ]]; then
 fi
 
 # Build our JSON payload and send it as a POST request to the Mattermost incoming web-hook URL
-payload='{"username":"'$username'","emoji":"'$icon_emoji'","attachments":[{"color":"'${color}'","title":"'${subject}'","text":"'${msg}'","fields": [{"short": true, "title": "Важность","value": "'${severity}'"},{"short": true,"title": "Значение",	"value": "'${item_value}'"}]}]}'
+payload='{"username":"'$username'","emoji":"'$icon_emoji'","text":"'${subject}'" ,"attachments":[{"color":"'${color}'","title":"'${subject}'","text":"'${msg}'","fields": [{"short": true, "title": "Важность","value": "'${severity}'"},{"short": true,"title": "Значение",	"value": "'${item_value}'"}]}]}'
 
 # Send Payload to the Rocket.Chat Server
 curl -X POST -H 'Content-Type: application/json' --data "${payload}" $url
