@@ -1,14 +1,14 @@
 # zabbix-rocket.chat
 Rocket.Chat zabbix alerts script
 Usage:
-* Create incoming webhook for alerts.
-* Copy script to the alertscript path.
+* Create an incoming webhook for alerts.
+* Copy the script to the alertscript path.
 * Create new mediatype Rocket.Chat with params:
 >     {ALERT.SENDTO}
 >     {ALERT.SUBJECT}
 >     {ALERT.MESSAGE}
 
-* Create action with default subject
+* Create an action with default subject
 >     [{TRIGGER.STATUS}] {TRIGGER.NAME}
 
 Default message:
