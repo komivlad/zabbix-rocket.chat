@@ -2,6 +2,8 @@
 Rocket.Chat zabbix alerts script
 
 Usage:
+
+* Change rocket chat url in script rocketchat.sh.
 * Create an incoming webhook for alerts.
 * Copy the script to the alertscript path.
 * Create new mediatype Rocket.Chat with params:
