@@ -1,5 +1,6 @@
 #!/bin/bash
 
+<<<<<<< HEAD
 url="https://rocket.chat/hooks/$1"
 zabbix_baseurl="https://zabbix"
 username='zabbix'
@@ -39,8 +40,6 @@ fi
 severity='`'$severity'`'
 
 payload='{"username":"'$username'","text":"'${subject}'" ,"attachments":[{"color":"'${color}'","title":"'${subject}'","text":"'${msg}'","fields": [{"short": true,"title": "History","value": "'${trigger_chart}'"},{"short": true, "title": "Severity","value": "'${severity}'"},{"short": true,"title": "Value", "value": "'${item_value}'"}]}]}'
-
-echo "${payload}" >>${LOGFILE}
 
 curl -X POST -H 'Content-Type: application/json' --data "${payload}" $url
 
